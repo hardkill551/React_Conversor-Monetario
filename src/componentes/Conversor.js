@@ -21,16 +21,16 @@ export default function Conversor() {
 
   function Converter(e){
     if(e.target.value === "Dolar"){
-        setMoeda({name: e.target.value, code: "USD", price: 5.39})
+        setMoeda({name: e.target.value, code: "$", price: 5.39})
     }
     if(e.target.value === "Iene"){
-        setMoeda({name: e.target.value, code: "Iene", price: 0.038})
+        setMoeda({name: e.target.value, code: "¥", price: 0.038})
     }
     if(e.target.value === "Euro"){
-        setMoeda({name: e.target.value, code: "Euro", price: 5.46})
+        setMoeda({name: e.target.value, code: "€", price: 5.46})
     }
     if(e.target.value === "Ethereum"){
-        setMoeda({name: e.target.value, code: "Eth", price: 8484.30})
+        setMoeda({name: e.target.value, code: "Ξ", price: 8484.30})
         
     }
     
@@ -38,7 +38,7 @@ export default function Conversor() {
   function Conversao(){
     const valorPonto = valor.replace(",",".")
     if(valorPonto>0){
-    setValorConvertido((valorPonto*(1/moeda.price)).toFixed(2))
+    setValorConvertido(moeda.code+(valorPonto*(1/moeda.price)).toFixed(2))
 }
   }
 }
