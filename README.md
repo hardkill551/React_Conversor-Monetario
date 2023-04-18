@@ -1,3 +1,3 @@
 # Conversor Monetário
 
-#### Pequeno projeto feio em react de conversões monetárias
+#### Pequeno projeto feio em react de conversões monetárias.
